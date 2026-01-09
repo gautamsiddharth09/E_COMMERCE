@@ -1,0 +1,137 @@
+
+
+/* Main container */
+.loginSignup {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:#FFA39B;
+  padding: 20px;
+}
+
+/* Form container */
+.loginSignup-container {
+  width: 400px;
+  max-width: 90%;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+.loginSignup-container h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  background: none;
+}
+
+/* Input fields */
+.loginSignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: none;
+}
+
+.loginSignup-fields input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.loginSignup-fields input:focus {
+  border-color:#FF8A5C; /* accent color */
+  outline: none;
+  box-shadow: 0 0 5px rgba(255,107,107,0.3);
+}
+
+/* Button */
+.loginSignup-container button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #ffd400;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginSignup-container button:hover {
+  background: #ffea00;
+  transform: translateY(-2px);
+}
+
+/* Login link */
+.loginSignup-login {
+  font-size: 14px;
+  color: #555;
+  background: none;
+}
+
+.loginSignup-login span {
+  color: #ff6b6b;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  background: none;
+}
+
+.loginSignup-login span:hover {
+  color: #ff4b4b;
+}
+
+/* Checkbox section */
+.loginSignup-agree {
+  width: 400px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #555;
+  margin-top: 15px;
+  background: none;
+}
+
+.loginSignup-agree input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.loginSignup-agree p{
+  background: none;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .loginSignup-container {
+    padding: 30px 20px;
+  }
+
+  .loginSignup-container h1 {
+    font-size: 24px;
+  }
+
+  .loginSignup-fields input {
+    font-size: 14px;
+  }
+
+  .loginSignup-container button {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+}

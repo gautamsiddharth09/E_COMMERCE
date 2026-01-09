@@ -1,0 +1,49 @@
+.descriptionbox {
+  width: 90%;
+  margin: 60px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+/* Top Tabs */
+.description-navigator {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+}
+
+.description-nav-box {
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 3px solid #ff6a2b;
+  cursor: pointer;
+}
+
+.description-nav-box-fade {
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+  cursor: pointer;
+}
+
+.description-nav-box-fade:hover {
+  color: #444;
+}
+
+/* Description Content */
+.descriptionbox-description {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.descriptionbox-description p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}

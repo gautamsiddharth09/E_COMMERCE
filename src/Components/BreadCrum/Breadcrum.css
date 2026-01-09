@@ -1,0 +1,41 @@
+.breadcrums {
+  width: 100%;
+  padding: 18px 80px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Arrow icon */
+.breadcrums img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  opacity: 0.6;
+}
+
+/* Text hover effect */
+.breadcrums span,
+.breadcrums {
+  cursor: default;
+}
+
+/* Highlight last item (product name) */
+.breadcrums :last-child {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .breadcrums {
+    padding: 14px 20px;
+    font-size: 13px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

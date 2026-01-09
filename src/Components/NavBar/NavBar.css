@@ -1,0 +1,167 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo p {
+  color: #171717;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: #626262;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+  color: #ff6a2b;
+}
+
+.nav-menu li:hover {
+  color: #ffe600;
+}
+
+.nav-menu hr {
+  border: none;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #ffe600;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+/* Button */
+.nav-login-cart button {
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: 1px solid #ff4141;
+  background: transparent;
+  color: #ff4141;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+  background: #ffe600;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(255, 65, 65, 0.4);
+  border: 1px solid white;
+}
+
+.nav-login-cart button:active {
+  background: #f3f3f3;
+}
+
+.nav-cart-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -35px;
+  margin-left: -55px;
+  border-radius: 11px;
+  font-size: 14px;
+  background: red;
+  color: white;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 30px;
+    font-size: 18px;
+  }
+
+  .nav-logo p {
+    font-size: 32px;
+  }
+
+  .nav-login-cart {
+    gap: 25px;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 14px 20px;
+  }
+
+  /* Hide menu initially */
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Show menu */
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    font-size: 18px;
+  }
+
+  .nav-login-cart button {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+  .nav-logo p {
+    font-size: 28px;
+  }
+}
+
+/* burger */
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    color: #171717;
+  }
+}
