@@ -14,7 +14,7 @@ const NavBar = () => {
     <div className="navbar">
       <div className="nav-logo">
         <img src={logo} alt="" />
-        <p>SHOPPER</p>
+        <p>StyleNest</p>
       </div>
 
       <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
