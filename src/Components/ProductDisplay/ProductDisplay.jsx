@@ -47,7 +47,7 @@ const {addToCart} = useContext(ShopContext);
         </div>
 
         <div className="ProductDisplay-right-desc">
-          Here are some clean, modern product display texts you can use for you.
+         Made from premium fabric, this product delivers the perfect balance of comfort and style. Designed for everyday wear, it offers a modern fit and long-lasting durability, making it a must-have addition to your wardrobe.
         </div>
           <div className="ProductDisplay-right-sizes">
             <h1>Select Size</h1>
